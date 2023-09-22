@@ -55,6 +55,29 @@
                 slidesToScroll: 1
             });
 
+            function updateImageSrc() {
+                var responsive01 = document.getElementById('responsive01');
+                var responsive02 = document.getElementById('responsive02');
+                var responsive03 = document.getElementById('responsive03');
+                var responsive04 = document.getElementById('responsive04');
+
+                if (window.innerWidth <= 480) {
+                    responsive01.src = 'img/responsive01.jpg';
+                    responsive02.src = 'img/responsive02.jpg';
+                    responsive03.src = 'img/responsive03.jpg';
+                    responsive04.src = 'img/responsive04.jpg';
+                } else {
+                    responsive01.src = 'img/title01.jpg';
+                    responsive02.src = 'img/title02.jpg';
+                    responsive03.src = 'img/title03.jpg';
+                    responsive04.src = 'img/title04.jpg';
+                }
+            }
+            
+            window.addEventListener('resize', updateImageSrc);
+            window.addEventListener('load', updateImageSrc);
+
+
             $('.hot-slide').slick({
                 dots: true,
                 autoplay:true,
@@ -71,8 +94,6 @@
                     }
                 ]
             });
-
-            $(".s_wr_2 option").hide();
 
             document.getElementById('menu-select').addEventListener('change', function() {
             var selectedValue = this.value;
@@ -198,7 +219,7 @@
                     <img src="img/logo.jpg" style="width:55px" alt="로고">
                 </a>
             </h1>
-            <a href="" class="mobile-store">
+            <a href="#" class="mobile-store">
                 <img src="img/mobile.jpg" alt="설빙몰">
             </a>
             <button class="toggle-menu">
@@ -216,22 +237,22 @@
         <ul class="title-slider">
             <li>
                 <a href="#">
-                    <img src="img/title01.jpg" alt="하겐다즈 설빙">
+                    <img id="responsive01" src="" alt="하겐다즈 설빙">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="img/title02.jpg" alt="인절미 설빙">
+                    <img id="responsive02" src="img/title02.jpg" alt="인절미 설빙">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="img/title03.jpg" alt="메론 설빙">
+                    <img id="responsive03" src="img/title03.jpg" alt="메론 설빙">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="img/title04.jpg" alt="설빙몰">
+                    <img id="responsive04" src="img/title04.jpg" alt="설빙몰">
                 </a>
             </li>
         </ul>
@@ -314,7 +335,9 @@
             <div class="container wrap">
                 <div class="event">
                     <h3>EVENT</h3>
-                    <img src="img/event.jpg" alt="애플망고치즈 설빙">
+                    <a href="">
+                        <img src="img/event.jpg" alt="애플망고치즈 설빙">
+                    </a>
                 </div>
                 <div class="new">
                     <h3>NEW & NOTICE</h3>
@@ -348,6 +371,9 @@
                         <h2>매장찾기</h2>
                         <form action="">
                             <input type="text" name="stx" placeholder="매장명 검색">
+                            <button>
+                                <i class="ion-ios-search-strong"></i>
+                            </button>
                             <div class="addr">
                                 <span>
                                     <select id="menu-select" class="sido">
