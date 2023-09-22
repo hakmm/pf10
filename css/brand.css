@@ -177,6 +177,9 @@
     display: inline-block;
 }
 
+#evt-new .store .store-search > div form {
+    position: relative;
+}
 
 #evt-new .store .store-search > div form input {
     border:0;
@@ -187,4 +190,15 @@
     line-height:50px;
     height: 50px;
     background: none;
+}
+
+#evt-new .store .store-search > div form button {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+#evt-new .store .store-search > div form button i {
+    color: #fff;
+    font-size: 25px;
 }

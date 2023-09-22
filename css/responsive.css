@@ -171,6 +171,11 @@
         margin-top: 10px;
     }
     
+    #evt-new .container .new ul li a div span:nth-child(2) {
+        font-size: 3.75vw;
+    }
+    
+    
     #evt-new .store {
         margin-top: 10.41vw;
     }

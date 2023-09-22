@@ -68,6 +68,7 @@ header .container form {
 header .container form input {
     padding: 5px;
     outline: none;
+    width: 170px;
 }
 
 header .container form button {
