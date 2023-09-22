@@ -1,0 +1,350 @@
+@media only screen and (max-width:480px){ 
+    header .container {
+        display: none !important;
+    }
+    
+    header .ham {
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    header .ham h1 {
+        width: 82%;
+        text-align: center;
+        order: 2;
+    }
+    
+    header .ham > a {
+        order: 1;
+    }
+    
+/* 타이틀 */
+    #title {
+        top: 68px;
+    }
+
+    #title img {
+        width: 100%;
+    }
+   
+    #title .slick-prev {
+        left: 30px;
+    }
+    
+    #title .slick-next {
+        right: 35px;
+    }
+    
+    #title .slick-prev::before, #title .slick-next::before {
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+/*  제품   */
+    #product {        
+        padding-top: 12.5vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #product .container > div:nth-of-type(1) {
+        height: 83.3vw;
+    }
+    
+    #product .container .new, #product .container .hot {
+        padding: 3.25vw;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    
+    #product .container .new h2, #product .container .hot h2 {
+        font-size: 8.33vw;
+    }
+    
+    #product .container p {
+        font-size: 4.16vw;
+    }
+    
+    #product .container .new span {
+        height: auto;
+    }
+    
+    #product .container img {
+        width: 40.4vw;
+    }
+    
+    #product .container .hot .hot-slide {
+        height: auto;
+    }
+    
+    #product .slick-prev, #product .slick-next {
+        top: 72%;
+    }
+    
+    #product .slick-next {
+        right: 10px;
+    }
+    
+    #product .slick-prev::before, #product .slick-next::before {
+        width: 8.33vw;
+        height: 8.33vw;
+    }
+    
+    #product .slick-dots {
+        bottom: -6.25vw;
+    }
+    
+    #product .container > div:nth-of-type(2) {
+        margin-top: 10.4vw;
+    }
+    
+    #product .container > div:nth-of-type(2) a {
+        display: block;
+        border: 3px solid #84664D;
+        border-radius: 40px;
+        height: 10.41vw;
+        line-height: 10.41vw;
+        font-size: 5.41vw;
+        color: #84664D;
+        font-weight: bold;
+    }
+    
+    #product .container > div:nth-of-type(2) a::after {
+        content: "";
+        background-image: url(../img/brand.png);
+        display: block;
+        width: 22.2vw;
+        height: 25.6vw;
+        background-size: contain;
+        position: relative;
+        top: -91px;
+        left: 35px;
+    }
+   
+    #product .container > div:nth-of-type(2) a span {
+        margin-left: 132px;
+    }
+    
+    #product .container > div:nth-of-type(2) ul {
+        display: none;
+    }
+/*  브랜드 영상    */
+    #brand {
+        padding-top: 12.5vw;
+    }
+    
+    #brand .container::after, #brand .container::before {
+        height: 11.4vw;
+    }
+    
+    #brand .container .container-sub {
+        padding: 10.4vw 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #brand .container .container-sub .video {
+        margin: 3.5vw 0;
+    }
+    
+    #brand .container .container-sub .video iframe {
+        width: 100%;
+        height: 87.6vw;
+    }
+    
+/*  이벤트   */
+    #evt-new .container {
+        display: block;
+    }
+    
+    #evt-new .container .event, #evt-new .container .new{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #evt-new .container .event img {
+        width: 100%;
+    }
+    
+    #evt-new .container .new {
+        margin-top: 10px;
+    }
+    
+    #evt-new .store {
+        margin-top: 10.41vw;
+    }
+    
+    #evt-new .store h2 {
+        margin-bottom: 15px;
+        letter-spacing: unset;
+    }
+    
+    #evt-new .store .store-search, #evt-new .store .store-franchise {
+        padding: 5.6vw;
+        height: 68.25vw;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #evt-new .store .store-search form {
+        display: none;
+    }
+    
+    #evt-new .store .store-franchise > div .guide {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    
+    .mobile a {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .mobile a::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #7B6251;
+        background-size: contain;
+        margin-top: 12px;
+    }
+    
+    .mobile a::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        bottom: -77px;
+    }
+    
+    .store-search .mobile a {
+        color: #fff;
+        
+    }
+    
+    .store-franchise .mobile a {
+        color: #000;
+    }
+    
+    .store-search .mobile a::before {
+        background-image: url(../img/search.svg);
+    }
+    
+    .store-franchise .mobile a::before {
+        background-image: url(../img/arrow.svg);
+    }
+
+/*  sns    */
+    #sns {
+        padding-top: 12.5vw;
+    }
+    
+    #sns .container::after, #sns .container::before {
+        height: 11.4vw;
+        background-position: center;
+    }
+    
+    #sns .container .container-sub {
+        padding: 10.4vw 0;
+    }
+    
+    #sns .container .container-sub > div {
+        gap: 10px;
+    }
+    
+    #sns .container .container-sub > div span a {
+        width: 10.4vw;
+        height: 10.4vw;
+    }
+    
+    #sns .container .container-sub > div span a i {
+        line-height: 10.4vw;
+    }
+    
+    #sns .insta img {
+        width: 48.6vw;
+        height: 48.6vw;
+    }
+    
+    #sns .insta > ul {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    }
+    
+    #sns .insta > ul > li > a p {
+        width: 48.6vw;
+        top: 10%;
+    }
+    
+    #sns .insta > ul > li:before {
+        width: 48.6vw;
+    }
+    
+    #sns .insta > ul > li:hover:before {
+        height: 48.6vw;
+    }
+/*   하단  */
+    footer {
+        padding: 10.4vw 0;
+    }
+    
+    footer .container > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        gap: 3.25vw;
+    }
+    
+    footer .container > ul li a {
+        
+    font-size: 3.33vw;
+    }
+    
+    footer .container > a {
+        display: none;
+        
+    }
+    
+    footer .container > div {
+        font-size: 3.33vw;
+        text-align: unset;
+        margin-left: 10px;
+    }
+    
+    footer .container > div > span {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    footer .container > div > span > span {
+        width: 100%;
+    }
+    
+/*  공통    */
+    h2 {
+        font-size: 6.33vw;
+    }
+    
+    h3 {
+        
+    font-size: 4.79vw !important;
+    }
+    
+    main {
+        padding-top: 0;
+    }
+}

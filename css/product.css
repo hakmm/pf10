@@ -1,0 +1,165 @@
+main {
+    padding-top: 100px;
+}
+
+#product {
+    padding-top: 60px;
+}
+
+#product .container > div:nth-of-type(1) {
+    display: flex;
+    height: 400px;
+}
+
+#product .container img {
+    width: 194px;
+}
+
+#product .container .new {
+    width: 30%;
+    background: #AD9582;
+    padding: 30px;
+}
+
+#product .container .new h2, #product .container .new span p {
+    color: #fff;
+}
+
+#product .container .new span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#product .container p {
+    font-size: 20px;
+}
+
+#product .container .hot {
+    width: 70%;
+    background: #EBE2D3;
+    padding: 30px;
+}
+
+#product .container .hot .hot-slide {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+}
+
+#product .container .hot .hot-slide .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product .container > div:nth-of-type(2) a {
+    display: none;
+}
+
+#product .container > div:nth-of-type(2) ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#product .container > div:nth-of-type(2) ul li {
+    width: calc(100% / 6);
+    /*! padding: 18px; */
+    box-sizing: border-box;
+}
+
+#product .container > div:nth-of-type(2) ul .menu02 {
+    border: 1px solid #F4EAE2;
+}
+
+#product .container > div:nth-of-type(2) ul li:not(:first-child) {
+    border-right: 1px solid #F4EAE2;
+    border-bottom: 1px solid #F4EAE2;
+}
+
+#product .container > div:nth-of-type(2) ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#product .container > div:nth-of-type(2) ul li a:hover {
+    background-color: #EBE2D3;
+}
+
+#product .container > div:nth-of-type(2) ul li a::before {
+    content: "";
+    width: 68px;
+    height: 79px;
+    display: block;
+}
+
+#product .container > div:nth-of-type(2) ul .menu01 a::before {
+    background-image: url(../img/menu01.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu02 a::before {
+    background-image: url(../img/menu02.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu03 a::before {
+    background-image: url(../img/menu03.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu04 a::before {
+    background-image: url(../img/menu04.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu05 a::before {
+    background-image: url(../img/menu05.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu06 a::before {
+    background-image: url(../img/menu06.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu07 a::before {
+    background-image: url(../img/menu07.png);
+}
+
+#product .container > div:nth-of-type(2) ul .menu08 a::before {
+    background-image: url(../img/menu08.png);
+}
+
+/* slick 스타일  */
+
+#product .slick-dots {
+    bottom: 30px;
+}
+
+#product .slick-prev::before, #product .slick-next::before {
+    font-size: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#product .slick-prev::before {
+    background-image: url(../img/hot_prev.png);
+}
+
+#product .slick-next::before {
+    background-image: url(../img/hot_next.png);
+}
+
+#product .slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+#product .slick-next {
+    right: 22px;
+}

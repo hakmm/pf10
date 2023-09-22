@@ -1,0 +1,23 @@
+footer {
+    padding: 50px 0;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .container > ul {
+    display: flex;
+    gap: 30px;
+}
+
+footer .container > div {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+footer .container > a {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}

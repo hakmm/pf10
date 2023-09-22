@@ -1,0 +1,103 @@
+#sns {
+    padding-top: 60px;
+}
+
+#sns .container::after, #sns .container::before {
+    content: "";
+    display: block;
+    height: 55px;
+    background-size: cover;
+}
+
+#sns .container::after {
+    background-image: url(../img/sns_bottom_after.jpg);
+}
+
+#sns .container::before {
+    background-image: url(../img/sns_top_before.jpg);
+}
+#sns .container .container-sub {
+    background-color: #FAF9F5;
+    padding: 50px 0;
+}
+
+#sns .container .container-sub > div {
+    text-align: center;
+    margin-top: 30px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#sns .container .container-sub > div span a {    
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px #796150 solid;
+    vertical-align: middle;
+}
+
+#sns .container .container-sub > div span:last-child a:before {
+    content: "";
+    width: 20px;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../img/kakao_plus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sns .container .container-sub > div span a i {
+    font-size: 20px;
+    line-height: 50px;
+    color: #7D6759;
+}
+
+#sns .insta > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#sns .insta > ul > li {
+    position: relative;
+}
+
+#sns .insta > ul > li:before {
+    content: "";
+    top: 0;
+    height: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#sns .insta > ul > li:hover:before {
+    height: 315px;
+}
+
+#sns .insta > ul > li:hover a p {
+    display: block;
+}
+
+#sns .insta > ul > li > a p {
+    font-size: 13px;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 26%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: none;
+    line-height: 1.5;
+}
+
+#sns .insta img {
+    width: 315px;
+    height: 315px;
+}

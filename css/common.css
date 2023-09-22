@@ -1,0 +1,25 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    letter-spacing: 4.5px;
+    text-align: center;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}

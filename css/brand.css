@@ -1,0 +1,190 @@
+#brand {
+    padding-top: 60px;
+}
+
+#brand .container::after, #brand .container::before {
+    content: "";
+    display: block;
+    height: 55px;
+    background-size: cover;
+}
+
+#brand .container::after {
+    background-image: url(../img/bottom_after.jpg);
+}
+
+#brand .container::before {
+    background-image: url(../img/top_before.jpg);
+}
+
+#brand .container .container-sub {
+    background-color: #EBE2D3;
+    padding: 50px 0;
+}
+
+#brand .container .container-sub h2 {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#brand .container .container-sub  .video {
+    text-align: center;
+    margin: 60px 0;
+}
+
+#brand .container .container-sub  .video iframe {
+    width: 900px;
+    height: 512px;
+}
+
+/* event */
+
+#evt-new .container {
+    display: flex;
+}
+
+#evt-new .container h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+#evt-new .container .new {
+    margin-left: 15px;
+}
+
+#evt-new .container .new ul li {
+    padding: 15px 0;
+}
+
+#evt-new .container .new ul li a {
+    display: flex
+}
+
+#evt-new .container .new ul li a div {
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+#evt-new .container .new ul li a div span {
+    font-size: 15px;
+}
+
+#evt-new .container .new ul li a div span:nth-child(2) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mobile {
+    display: none;
+}
+
+/* store */
+#evt-new .store {
+    display: flex;
+    margin-top: 50px;
+}
+
+#evt-new .store .store-search, #evt-new .store .store-franchise {
+    height: 390px;
+    width: 50%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+#evt-new .store .store-search {
+    background-image: url(../img/store.jpg);
+}
+
+#evt-new .store .store-search > div form .addr {
+    display: flex;
+}
+
+#evt-new .store .store-search > div form .addr > span {
+    width: 50%;
+    border-bottom: 2px solid #fff;
+}
+
+#evt-new .store .store-search > div form .addr span select {
+    border:0;
+    color:#fff;
+    font-size:1.14285em;
+    width:100%;
+    line-height:50px;
+    height: 50px;
+    background: none;
+}
+
+#evt-new .store .store-search > div form .addr span:nth-child(2) {
+    margin-left: 10px;
+    
+}
+
+#evt-new .store .store-search > div form .addr span:nth-child(2) > span {
+    position: relative;
+    color: #fff;
+    top: 18px;
+    left: 38px;
+    font-size: 1.14285em;
+}
+
+#evt-new .store .store-search > div form .addr select option {
+    color: #000;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu.active {
+    display: block;
+}
+
+#evt-new .store .store-search h2 {
+    color: #fff;
+}
+
+#evt-new .store h2 {
+    font-family: 'Gothic A1', sans-serif;
+    margin-bottom: 70px;
+}
+
+#evt-new .store .store-franchise {
+    background-image: url(../img/franchise.jpg);
+}
+
+#evt-new .store .store-franchise > div .guide p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#evt-new .store .store-franchise > div .guide span {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+#evt-new .store .store-franchise > div .guide span::after {
+    content: "";
+    background-image: url(../img/arrow.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+#evt-new .store .store-search > div form input {
+    border:0;
+    border-bottom: 2px solid #fff;
+    color:#fff;
+    font-size:1.14285em;
+    width:100%;
+    line-height:50px;
+    height: 50px;
+    background: none;
+}
