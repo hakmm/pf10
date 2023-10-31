@@ -212,6 +212,7 @@
         line-height: 1.2;
         align-items: center;
         text-align: center;
+        font-size: 15px;
     }
     
     .mobile a::after {
