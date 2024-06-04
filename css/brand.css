@@ -184,12 +184,15 @@
 #evt-new .store .store-search > div form input {
     border:0;
     border-bottom: 2px solid #fff;
-    color:#fff;
     font-size:1.14285em;
     width:100%;
     line-height:50px;
     height: 50px;
     background: none;
+}
+
+#evt-new .store .store-search > div form input::placeholder {
+    color : #fff;
 }
 
 #evt-new .store .store-search > div form button {
