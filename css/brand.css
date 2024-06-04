@@ -182,6 +182,7 @@
 }
 
 #evt-new .store .store-search > div form input {
+    color : #fff;
     border:0;
     border-bottom: 2px solid #fff;
     font-size:1.14285em;
